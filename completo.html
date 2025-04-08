@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integración de Widgets</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      width: 1280px;
+      height: 720px;
+      position: relative;
+    }
+
+    iframe {
+      border: none;
+    }
+
+    #soundalerts {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      transform: scale(0.9);
+    }
+
+    #throne {
+      position: absolute;
+      top: 150px;
+      left: -30px;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      transform: scale(0.6);
+    }
+
+    #metas {
+      position: absolute;
+      top: 630px;
+      left: 330px;
+      width: 500px;
+      height: 140px;
+      z-index: 2;
+      transform: scale(0.6);
+    }
+
+    #botrix-alerts {
+      position: absolute;
+      top: 5px;
+      left: -6%;
+      width: 1280px;
+      height: 720px;
+      z-index: 6;
+      transform: scale(0.6);
+    }
+
+    #musica {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 400px;
+      height: 900px; /* Sin cambios, manteniendo el tamaño original */
+      z-index: 8;
+    }
+
+    #chat-activity-container {
+      display: flex;
+      flex-direction: column;
+      width: 24%;
+      height: 100%;
+      z-index: 2;
+      transform: scale(0.7);
+      position: absolute;
+      top: 200px;
+      left: -50px;
+    }
+
+    #botrix-chat {
+      width: 100%;
+      height: 85%; /* Aumentado para mostrar más contenido */
+    }
+
+    #botrix-activity {
+      width: 100%;
+      height: 15%;
+    }
+
+    #alertas-tiktok {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 220px;
+      z-index: 10;
+  transform: scale(0.8);
+    }
+
+    #donadores-tiktok {
+      position: absolute;
+      top: 200px;
+      right: 0;
+      width: 300px;
+      height: 220px;
+      z-index: 10;
+  transform: scale(0.8);
+    }
+
+    #corazones-tiktok {
+      position: absolute;
+      top: 370px;
+      right: 0;
+      width: 300px;
+      height: 220px;
+      z-index: 10;
+  transform: scale(0.8);
+    }
+
+    #chat-tiktok {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 300px;
+      height: 180px; /* Aumentado */
+      z-index: 10;
+     transform: scale(0.8);
+    }
+  </style>
+</head>
+<body>
+  <!-- SoundAlerts -->
+  <iframe id="soundalerts" src="https://source.soundalerts.com/overlay/fd9ea406-efce-3885-b5f5-868305d5c76c/tZlhgHsRHOlCXqWyS577" allow="autoplay"></iframe>
+
+  <!-- Metas -->
+  <iframe id="metas" src="https://botrix.live/widgets/goals/bits/?tema=cleanradius&bid=hL4jXwuISOTVQTdQVTPC9A&font=Arial&cantidad=2300&cantidadI=0&d=1000&color=be63ff;ffffff&c=#be63ff#ffffff&texto=BITS%20PARA%20PODER%20RETIRAR" allow="autoplay"></iframe>    
+
+  <!-- Throne -->
+  <iframe id="throne" src="https://throne.com/stream-alerts/6w1S6ns0Z9aWPlQE8OnnDT1ui0Q2" allow="autoplay"></iframe>    
+
+  <!-- Botrix Alerts -->
+  <iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A&trovo=false&kick=false&livespace=false" allow="autoplay"></iframe>
+
+  <!-- Música StreamElements (sin cambios, tamaño original) -->
+  <iframe id="musica" src="https://streamelements.com/overlay/67f48b946d90d3a6d8544cb3/eGeqNplcb4Fa7paZRUYYid9-nED9Ow5lyETRny4-QUKRji48" allow="autoplay"></iframe>
+
+  <!-- Chat y actividad Botrix -->
+  <div id="chat-activity-container">
+    <iframe id="botrix-chat" src="https://botrix.live/widgets/chat/?bid=hL4jXwuISOTVQTdQVTPC9A&bots=false&emojis=true&hideCommands=false&hideMessages=false&hideMessagesSeconds=10&fontSize=20&trovo=false&twitch=true&youtube=true&kick=false&livespace=true&platformIcon=true&theme=default&ignoredUsers=Jarvis%2C%20syzlo%2C%20Makeyultimate%2C%20"></iframe>
+    <iframe id="botrix-activity" src="https://botrix.live/widgets/activityfeed/"></iframe>
+  </div>
+
+  <!-- TikTok Widgets -->
+  <iframe id="alertas-tiktok" src="https://tikfinity.zerody.one/widget/myactions?cid=1638627&screen=1"></iframe>
+  <iframe id="donadores-tiktok" src="https://tikfinity.zerody.one/widget/topgifter?cid=1638627"></iframe>
+  <iframe id="corazones-tiktok" src="https://tikfinity.zerody.one/widget/topliker?cid=1638627"></iframe>
+  <iframe id="chat-tiktok" src="https://tikfinity.zerody.one/widget/chat?cid=1638627"></iframe>
+</body>
+</html>
