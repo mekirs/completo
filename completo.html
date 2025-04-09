@@ -60,9 +60,9 @@
     #musica {
       position: absolute;
       top: 0;
-      left: 0;
+      right: 0; /* Mover a la esquina derecha */
       width: 400px;
-      height: 900px; /* Sin cambios, manteniendo el tamaño original */
+      height: 900px;
       z-index: 8;
     }
 
@@ -80,7 +80,7 @@
 
     #botrix-chat {
       width: 100%;
-      height: 85%; /* Aumentado para mostrar más contenido */
+      height: 85%;
     }
 
     #botrix-activity {
@@ -95,7 +95,7 @@
       width: 300px;
       height: 220px;
       z-index: 10;
-  transform: scale(0.8);
+      transform: scale(0.8);
     }
 
     #donadores-tiktok {
@@ -105,7 +105,7 @@
       width: 300px;
       height: 220px;
       z-index: 10;
-  transform: scale(0.8);
+      transform: scale(0.8);
     }
 
     #corazones-tiktok {
@@ -115,7 +115,7 @@
       width: 300px;
       height: 220px;
       z-index: 10;
-  transform: scale(0.8);
+      transform: scale(0.8);
     }
 
     #chat-tiktok {
@@ -123,9 +123,9 @@
       bottom: 0;
       right: 0;
       width: 300px;
-      height: 180px; /* Aumentado */
+      height: 180px;
       z-index: 10;
-     transform: scale(0.8);
+      transform: scale(0.8);
     }
   </style>
 </head>
@@ -142,7 +142,7 @@
   <!-- Botrix Alerts -->
   <iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A&trovo=false&kick=false&livespace=false" allow="autoplay"></iframe>
 
-  <!-- Música StreamElements (sin cambios, tamaño original) -->
+  <!-- Música StreamElements (movida a la derecha) -->
   <iframe id="musica" src="https://streamelements.com/overlay/67f48b946d90d3a6d8544cb3/eGeqNplcb4Fa7paZRUYYid9-nED9Ow5lyETRny4-QUKRji48" allow="autoplay"></iframe>
 
   <!-- Chat y actividad Botrix -->
