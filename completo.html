@@ -38,9 +38,20 @@
       transform-origin: bottom left;
     }
 
+   #throne {
+      position: absolute;
+    top: 0px;
+      right: 330px;
+      width: 100%;
+      height: 100%;
+      z-index: 4;
+      transform: scale(0.6);
+      transform-origin: bottom right;
+    }
+
     #metas {
       position: absolute;
-      bottom: -30px;
+      bottom: -55px; /* mas es mas arriba */
       left: 50%;
       transform: translateX(-50%) scale(0.6);
       width: 500px;
@@ -58,17 +69,6 @@
       height: 720px;
       z-index: 6;
       transform-origin: top center;
-    }
-
-    #throne {
-      position: absolute;
-      bottom: 5px;
-      right: 330px;
-      width: 100%;
-      height: 100%;
-      z-index: 4;
-      transform: scale(0.6);
-      transform-origin: bottom right;
     }
 
     #musica {
@@ -94,8 +94,8 @@
 
  #donadores-tiktok {
     position: absolute;
-    top: 0px; /* Choque con el borde superior */
-    right: 20px;
+    top: 40px; /* Choque con el borde superior */
+    right: 0px;
     width: 200px;
     height: 250px;
     z-index: 10;
@@ -105,8 +105,8 @@
 
   #corazones-tiktok {
     position: absolute;
-    top: 120px; /* Ajustado más arriba */
-    right: 20px;
+    top: 160px; /* Ajustado más arriba */
+    right: 0px;
     width: 200px;
     height: 250px;
     z-index: 10;
@@ -116,7 +116,7 @@
 
   #chat-tiktok {
     position: absolute;
-    top: 540px;
+    top: 650px;
     right: 0px;
     width: 300px;
     height: 180px;
@@ -124,7 +124,6 @@
     transform: scale(0.6);
     transform-origin: top right;
   }
-    
   </style>
 </head>
 <body>
@@ -143,9 +142,7 @@
   <!-- Botrix Alerts -->
   <iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A&trovo=false&kick=false&livespace=false" allow="autoplay"></iframe>
 
-  <!-- Música StreamElements -->
-  <iframe id="musica" src="https://streamelements.com/overlay/67f48b946d90d3a6d8544cb3/eGeqNplcb4Fa7paZRUYYid9-nED9Ow5lyETRny4-QUKRji48" allow="autoplay"></iframe>
-
+ 
   <!-- TikTok Widgets -->
   <iframe id="alertas-tiktok" src="https://tikfinity.zerody.one/widget/firework?cid=1638627"></iframe>
   <iframe id="donadores-tiktok" src="https://tikfinity.zerody.one/widget/topgifter?cid=1638627"></iframe>
