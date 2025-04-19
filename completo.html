@@ -51,7 +51,7 @@
 
     #metas {
       position: absolute;
-      bottom: -55px; /* mas es mas arriba */
+      bottom: -25px; /* mas es mas arriba */
       left: 50%;
       transform: translateX(-50%) scale(0.6);
       width: 500px;
@@ -71,13 +71,15 @@
       transform-origin: top center;
     }
 
-    #musica {
+     #musica { /* si se desconfigura es la musica */ 
       position: absolute;
-      bottom: -120px;
-      right: 10px;
+      bottom: -355px;   /* menos es mas abajo */ 
+      right: -5px; /* menos es mas a la derecha */ 
       width: 400px;
-      height: 300px;
+      height: 500px;
       z-index: 8;
+      transform: scale(1.1);
+      transform-origin: bottom right;
     }
 
     /* TikTok widgets verticales y pegados al borde derecho */
@@ -94,7 +96,7 @@
 
  #donadores-tiktok {
     position: absolute;
-    top: 40px; /* Choque con el borde superior */
+    top: 0px; /* Choque con el borde superior */
     right: 0px;
     width: 200px;
     height: 250px;
@@ -105,7 +107,7 @@
 
   #corazones-tiktok {
     position: absolute;
-    top: 160px; /* Ajustado más arriba */
+    top: 120px; /* menos es más arriba */
     right: 0px;
     width: 200px;
     height: 250px;
